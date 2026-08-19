@@ -1,0 +1,8 @@
+mixin printnav(nav)
+    nav.nav 
+        ul
+            for item in nav 
+                li
+                    a(href=item.link) #{item.text} 
+
+        a.button(href="#") GET STARTED

@@ -1,0 +1,29 @@
+include components/vars
+include components/functions
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Lobster&family=Maven+Pro:wght@400..900&display=swap' rel='stylesheet')
+        link(rel="stylesheet", href="css/styles.css")
+        title MISOCIAL. Lorem ipsum dolor sit, amet consectetur adipisicing  
+
+    body 
+        header.header 
+            .flex 
+                .logo
+                    img(src="img/planet.png", alt="alt")
+                    h1 MISOCIAL
+                .nav 
+                    +printnav(nav)
+            
+            .pricing 
+                p.subtitle SOCIAL MARKETING &amp; ANALYTICS
+                h2 Pricing Table
+                p Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do eiusmod tempor incididunt ut.
+            .buttondiv 
+                a.btn(href="#") 
