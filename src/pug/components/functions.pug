@@ -6,3 +6,18 @@ mixin printnav(nav)
                     a(href=item.link) #{item.text} 
 
         a.button(href="#") GET STARTED
+
+mixin printcards(cards)
+    for card in cards 
+        figure.cardfigure
+            figcaption 
+                picture.cardimg
+                    source(srcset=card.src type="image/webp")
+                    img(src=card.src, alt=card.alt)
+                p.cardname= card.name
+                p.cardprice 
+                    span.dollar $ 
+                    span.price #{card.price}
+                    span.month /month
+                p.carddesc #{card.desc}
+                a.cardbtn(href=card.link) select plan

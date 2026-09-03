@@ -3,6 +3,7 @@
 
 html
     font-size: 1px
+    scroll-behavior: smooth !important
 
 .header
     background-image: url(../img/Background.webp)
@@ -12,6 +13,7 @@ html
     background-position: center
 
 *
+    font-size: 16rem
     margin: 0
 
 .flex
@@ -26,7 +28,7 @@ html
 
 h1
     display: inline-block
-    font-size: 30px
+    font-size: 30rem
     letter-spacing: 6px
     color: #ffffff
     font-weight: 700
@@ -37,7 +39,7 @@ h1
     display: inline-flex
     a
         text-decoration: none
-        font-size: 16px
+        font-size: 16rem
         line-height: 19px
         color: #ffffff
         font-weight: 400
@@ -48,7 +50,7 @@ h1
 .button
     text-decoration: none
     display: inline-block
-    font-size: 12px
+    font-size: 12rem
     letter-spacing: 1px
     text-transform: uppercase
     color: #ffffff
@@ -68,7 +70,7 @@ h1
 .pricing
     margin: 9.5vw 0
     h2
-        font-size: 86px
+        font-size: 86rem
         letter-spacing: -3px
         color: #ffffff
         font-weight: 500
@@ -76,7 +78,7 @@ h1
         text-align: center
         margin: 15px 0 15px
     .subtitle
-        font-size: 14px
+        font-size: 14rem
         letter-spacing: 1px
         text-transform: uppercase
         color: #ffffff
@@ -103,7 +105,7 @@ h1
     p
         margin: auto
         max-width: 380px
-        font-size: 16px
+        font-size: 16rem
         line-height: 28px
         color: #ffffff
         font-weight: 400
@@ -116,7 +118,7 @@ h1
 .btn
     text-decoration: none
     display: inline-block
-    padding: 25px 32px
+    padding: 22px 32px
     border-radius: 32px
     background-color: #ffffff
     position: relative
@@ -144,4 +146,88 @@ h1
             background-color: #fff
         &::after
             border-color: #fff
-            
+
+main.main
+    .pricing
+        margin: 6.25vw 0vw 5.2vw
+        .subtitle
+            &::before, &::after
+
+                background-color: #6e45e2
+        h2
+            color: #4f4f6f
+            font-size: 60rem
+        p
+            color: #9fa4af
+
+.cards
+    display: flex
+    justify-content: center
+    column-gap: 50rem
+    row-gap: 50px
+    margin-bottom: 120rem 
+    p
+        margin: 10rem 0
+    .cardfigure
+        text-align: center
+        max-width: 440px
+        max-height: 648px
+        padding: 60rem
+        box-sizing: border-box
+        border: 1px solid #d7dbe8
+        border-radius: 30px
+        &:hover
+            box-shadow: 0 0 46px rgba(204,204,223,0.71)
+            cursor: pointer
+    .cardimg
+        display: inline-block
+        margin-bottom: 20rem
+    .cardname
+        font-size: 14rem
+        text-transform: uppercase
+        color: #9fa4af
+        font-weight: 400
+        font-family: "Maven Pro"
+    .cardprice
+        font-size: 16rem
+        letter-spacing: -2px
+        color: #4f4f6f
+        font-weight: 400
+        font-family: "Maven Pro"
+        .dollar 
+            vertical-align: top
+            padding-top: 15px
+            display: inline-block
+        .price
+            font-size: 60rem
+        .month
+            font-size: 20rem
+    .carddesc
+        font-size: 16rem
+        line-height: 28rem
+        color: #9fa4af
+        font-weight: 400
+        font-family: "Maven Pro"
+        min-height: 110rem
+        margin-top: 20rem
+    .cardbtn
+        margin-top: 30rem
+        font-size: 12rem
+        letter-spacing: 1px
+        text-transform: uppercase
+        color: #c2c9db
+        font-weight: 400
+        font-family: "Maven Pro"
+        text-decoration: none
+        min-width: 200rem
+        display: inline-block
+        padding: 15rem
+        box-sizing: border-box
+        text-align: center
+        border-radius: 250rem
+        border: 2px solid #d7dbe8
+        filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
+        &:hover
+            background-color: #6e45e2
+            color: #fff
+            border-color: transparent
