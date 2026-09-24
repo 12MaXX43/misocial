@@ -1,9 +1,11 @@
 mixin printnav(nav)
     nav.nav 
-        ul
+        ul.header_menu 
             for item in nav 
                 li
                     a(href=item.link) #{item.text} 
+        .hamburger 
+            span 
 
         a.button(href="#") GET STARTED
 
