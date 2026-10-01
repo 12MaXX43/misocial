@@ -1,13 +1,14 @@
 mixin printnav(nav)
     nav.nav 
-        ul.header_menu 
-            for item in nav 
-                li
-                    a(href=item.link) #{item.text} 
+        .ulwrap
+            ul.header_menu 
+                for item in nav 
+                    li
+                        a(href=item.link) #{item.text} 
+            a.button(href="#") GET STARTED
         .hamburger 
             span 
 
-        a.button(href="#") GET STARTED
 
 mixin printcards(cards)
     for card in cards 
